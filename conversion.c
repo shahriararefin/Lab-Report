@@ -2,19 +2,22 @@
 
 int main() {
 
-    float meter, m, cm, inch, feet;
-    printf("The distance between Ashulia and Mirpur is: \n");
-    scanf("%f", &m);
+    float gross_salary, dearness_allowance, basic_salary, house_rent;
+    printf("Enter Niloys Basic Salary\n");
+    scanf("%f", &basic_salary);
 
-    cm = m*100;
-    inch = m*39.37;
-    feet = m*3.21;
+    dearness_allowance= basic_salary-40%
+    printf("Enter dearness allowance: \n");
+    scanf("%f", &dearness_allowance);
 
-    printf("The distance in centimeter is: %.2f\n", cm);
-    printf("The distance in inch is: %.2f\n", inch);
-    printf("The distance in feet is: %.2f\n", feet);
+    house_rent= basic_salary-20%
+    printf("Enter the house rent \n");
+    scanf("%f", &house_rent);
 
+    gross_salary=basic_salary+dearness_allowance+house_rent;
+
+    printf("Niloys gross salary is %.0f", gross_salary);
 
 
     return 0;
-} 
+}
