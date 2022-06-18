@@ -8,12 +8,12 @@ if (Arif<Fahmid && Arif<Joy){
     printf("Arif is with the lowest age: %d\n ",Arif);
 }
 else if(Fahmid<Joy){
-    printf("Fahmid has the lowest age: %d\n", Fahmid);
+    printf("Fahmid is the lowest age: %d\n", Fahmid);
 }
 
 else
     {
-printf("Joy has the lowest age: %d", Joy);
+printf("Joy is the lowest age: %d", Joy);
 }
 return 0;
 } 
