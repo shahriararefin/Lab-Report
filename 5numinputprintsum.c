@@ -1,17 +1,21 @@
 #include<stdio.h>
 int main(){
 
+    int num, remainder, sum=0;
+    printf("Enter five digit number: ");
+    scanf("%d", &num);
 
-    int n,a,b,c,d,e;
-    printf("Enter a five digit number: ");
-    scanf("%d", &n);
-    a=(n/10000);
-    b=(n/1000)%10;
-    c=(n/100)%10;
-    d=(n/10)%10;
-    e=n%10;
-    printf("%d is the sum of the entered numbers",a+b+c+d+e,n);
+    while (num!=0)
+    {
+        remainder=num%10;
+        sum+=remainder;
+        num/=10;
+    }
 
+    printf("Sum of the number is : %d", sum);
 
     return 0;
+    
+
+    
 }
